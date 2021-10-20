@@ -16,6 +16,12 @@
 		084DCD4A271DF34800C4D2A2 /* task2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084DCD49271DF34800C4D2A2 /* task2Tests.swift */; };
 		084DCD54271DF34900C4D2A2 /* task2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084DCD53271DF34900C4D2A2 /* task2UITests.swift */; };
 		084DCD56271DF34900C4D2A2 /* task2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084DCD55271DF34900C4D2A2 /* task2UITestsLaunchTests.swift */; };
+		084DCD6A271EDB0A00C4D2A2 /* DynamicTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084DCD68271EDB0A00C4D2A2 /* DynamicTableCell.swift */; };
+		084DCD6B271EDB0A00C4D2A2 /* DynamicTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 084DCD69271EDB0A00C4D2A2 /* DynamicTableCell.xib */; };
+		084DCD6E271F099200C4D2A2 /* FixedTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084DCD6C271F099200C4D2A2 /* FixedTableCell.swift */; };
+		084DCD6F271F099200C4D2A2 /* FixedTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 084DCD6D271F099200C4D2A2 /* FixedTableCell.xib */; };
+		084DCD75271F0F5E00C4D2A2 /* WebviewTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084DCD73271F0F5E00C4D2A2 /* WebviewTableCell.swift */; };
+		084DCD76271F0F5E00C4D2A2 /* WebviewTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 084DCD74271F0F5E00C4D2A2 /* WebviewTableCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		084DCD4F271DF34900C4D2A2 /* task2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = task2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		084DCD53271DF34900C4D2A2 /* task2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = task2UITests.swift; sourceTree = "<group>"; };
 		084DCD55271DF34900C4D2A2 /* task2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = task2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		084DCD68271EDB0A00C4D2A2 /* DynamicTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTableCell.swift; sourceTree = "<group>"; };
+		084DCD69271EDB0A00C4D2A2 /* DynamicTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DynamicTableCell.xib; sourceTree = "<group>"; };
+		084DCD6C271F099200C4D2A2 /* FixedTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedTableCell.swift; sourceTree = "<group>"; };
+		084DCD6D271F099200C4D2A2 /* FixedTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FixedTableCell.xib; sourceTree = "<group>"; };
+		084DCD73271F0F5E00C4D2A2 /* WebviewTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebviewTableCell.swift; sourceTree = "<group>"; };
+		084DCD74271F0F5E00C4D2A2 /* WebviewTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebviewTableCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +111,7 @@
 		084DCD31271DF34100C4D2A2 /* task2 */ = {
 			isa = PBXGroup;
 			children = (
+				084DCD70271F0ECF00C4D2A2 /* custom cells */,
 				084DCD32271DF34100C4D2A2 /* AppDelegate.swift */,
 				084DCD34271DF34100C4D2A2 /* SceneDelegate.swift */,
 				084DCD36271DF34100C4D2A2 /* ViewController.swift */,
@@ -125,6 +138,19 @@
 				084DCD55271DF34900C4D2A2 /* task2UITestsLaunchTests.swift */,
 			);
 			path = task2UITests;
+			sourceTree = "<group>";
+		};
+		084DCD70271F0ECF00C4D2A2 /* custom cells */ = {
+			isa = PBXGroup;
+			children = (
+				084DCD6C271F099200C4D2A2 /* FixedTableCell.swift */,
+				084DCD6D271F099200C4D2A2 /* FixedTableCell.xib */,
+				084DCD73271F0F5E00C4D2A2 /* WebviewTableCell.swift */,
+				084DCD74271F0F5E00C4D2A2 /* WebviewTableCell.xib */,
+				084DCD68271EDB0A00C4D2A2 /* DynamicTableCell.swift */,
+				084DCD69271EDB0A00C4D2A2 /* DynamicTableCell.xib */,
+			);
+			path = "custom cells";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +257,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				084DCD6F271F099200C4D2A2 /* FixedTableCell.xib in Resources */,
 				084DCD3F271DF34800C4D2A2 /* LaunchScreen.storyboard in Resources */,
+				084DCD76271F0F5E00C4D2A2 /* WebviewTableCell.xib in Resources */,
 				084DCD3C271DF34800C4D2A2 /* Assets.xcassets in Resources */,
+				084DCD6B271EDB0A00C4D2A2 /* DynamicTableCell.xib in Resources */,
 				084DCD3A271DF34100C4D2A2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,8 +287,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				084DCD75271F0F5E00C4D2A2 /* WebviewTableCell.swift in Sources */,
 				084DCD37271DF34100C4D2A2 /* ViewController.swift in Sources */,
 				084DCD33271DF34100C4D2A2 /* AppDelegate.swift in Sources */,
+				084DCD6E271F099200C4D2A2 /* FixedTableCell.swift in Sources */,
+				084DCD6A271EDB0A00C4D2A2 /* DynamicTableCell.swift in Sources */,
 				084DCD35271DF34100C4D2A2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,6 +478,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,6 +506,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
